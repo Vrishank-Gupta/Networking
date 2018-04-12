@@ -57,6 +57,7 @@ public class StopAndWait extends android.app.Fragment {
                                 codeView.setVisibility(View.GONE);
                                 break;
                             case R.id.code:
+                                textView.setVisibility(View.GONE);
                                 input.setVisibility(View.GONE);
                                 output.setVisibility(View.GONE);
                                 codeView.setVisibility(View.VISIBLE);

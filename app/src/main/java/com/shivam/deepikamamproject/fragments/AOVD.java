@@ -1,8 +1,6 @@
 package com.shivam.deepikamamproject.fragments;
 
 
-import android.annotation.SuppressLint;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -61,6 +59,7 @@ public class AOVD extends android.app.Fragment {
                                 codeView.setVisibility(View.GONE);
                                 break;
                             case R.id.code:
+                                textView.setVisibility(View.GONE);
                                 input.setVisibility(View.GONE);
                                 output.setVisibility(View.GONE);
                                 codeView.setVisibility(View.VISIBLE);
