@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.shivam.deepikamamproject.R;
@@ -37,7 +38,7 @@ public class GoBackN extends android.app.Fragment {
         final TextView textView = rootview.findViewById(R.id.textiewgobackn);
         final TextView output = rootview.findViewById(R.id.outputgobackn);
         final   EditText input=rootview.findViewById(R.id.inputgobackn);
-
+        final ScrollView scroll1=rootview.findViewById(R.id.scrol5);
 
 
 
@@ -49,12 +50,14 @@ public class GoBackN extends android.app.Fragment {
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         switch (item.getItemId()) {
                             case R.id.descriptions:
+                                scroll1.setVisibility(View.VISIBLE);
                                 input.setVisibility(View.GONE);
                                 output.setVisibility(View.GONE);
                                 textView.setVisibility(View.VISIBLE);
                                 codeView.setVisibility(View.GONE);
                                 break;
                             case R.id.code:
+                                scroll1.setVisibility(View.GONE);
                                 textView.setVisibility(View.GONE);
                                 input.setVisibility(View.GONE);
                                 output.setVisibility(View.GONE);
@@ -64,6 +67,7 @@ public class GoBackN extends android.app.Fragment {
 
                                 break;
                             case R.id.tryit:
+                                scroll1.setVisibility(View.GONE);
                                 input.setVisibility(View.VISIBLE);
                                 output.setVisibility(View.VISIBLE);
                                 textView.setVisibility(View.GONE);

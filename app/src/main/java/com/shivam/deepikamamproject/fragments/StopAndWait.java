@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.shivam.deepikamamproject.R;
@@ -39,7 +40,7 @@ public class StopAndWait extends android.app.Fragment {
         final TextView textView = rootview.findViewById(R.id.textiewstopandwait);
         final TextView output = rootview.findViewById(R.id.outputstopandwait);
         final EditText input=rootview.findViewById(R.id.inputstopandwait);
-
+final ScrollView scroll1=rootview.findViewById(R.id.scrol1);
 
 
 
@@ -51,12 +52,14 @@ public class StopAndWait extends android.app.Fragment {
 
 
                             case R.id.descriptions:
+                                scroll1.setVisibility(View.VISIBLE);
                                 input.setVisibility(View.GONE);
                                 output.setVisibility(View.GONE);
                                 textView.setVisibility(View.VISIBLE);
                                 codeView.setVisibility(View.GONE);
                                 break;
                             case R.id.code:
+                                scroll1.setVisibility(View.GONE);
                                 textView.setVisibility(View.GONE);
                                 input.setVisibility(View.GONE);
                                 output.setVisibility(View.GONE);
@@ -66,6 +69,7 @@ public class StopAndWait extends android.app.Fragment {
 
                                 break;
                             case R.id.tryit:
+                                scroll1.setVisibility(View.GONE);
                                 input.setVisibility(View.VISIBLE);
                                 output.setVisibility(View.VISIBLE);
                                 textView.setVisibility(View.GONE);
