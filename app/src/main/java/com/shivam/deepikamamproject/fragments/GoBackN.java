@@ -1,6 +1,8 @@
 package com.shivam.deepikamamproject.fragments;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -34,10 +36,7 @@ public class GoBackN extends android.app.Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootview= inflater.inflate(R.layout.fragment_go_back_n, container, false);
-        final CodeView codeView = rootview.findViewById(R.id.codeviewgobackn);
         final TextView textView = rootview.findViewById(R.id.textiewgobackn);
-        final TextView output = rootview.findViewById(R.id.outputgobackn);
-        final   EditText input=rootview.findViewById(R.id.inputgobackn);
         final ScrollView scroll1=rootview.findViewById(R.id.scrol5);
 
 
@@ -51,29 +50,14 @@ public class GoBackN extends android.app.Fragment {
                         switch (item.getItemId()) {
                             case R.id.descriptions:
                                 scroll1.setVisibility(View.VISIBLE);
-                                input.setVisibility(View.GONE);
-                                output.setVisibility(View.GONE);
                                 textView.setVisibility(View.VISIBLE);
-                                codeView.setVisibility(View.GONE);
                                 break;
                             case R.id.code:
-                                scroll1.setVisibility(View.GONE);
-                                textView.setVisibility(View.GONE);
-                                input.setVisibility(View.GONE);
-                                output.setVisibility(View.GONE);
-                                codeView.setVisibility(View.VISIBLE);
-                                codeView.setCode("");
-                                codeView.getOptions().setTheme(ColorTheme.SOLARIZED_LIGHT);
-
-                                break;
-                            case R.id.tryit:
-                                scroll1.setVisibility(View.GONE);
-                                input.setVisibility(View.VISIBLE);
-                                output.setVisibility(View.VISIBLE);
-                                textView.setVisibility(View.GONE);
-                                codeView.setVisibility(View.GONE);
-                                inputstr=input.getText().toString();
-                                break;
+//                                String url = "http://www.example.com";
+//                                Intent i = new Intent(Intent.ACTION_VIEW);
+//                                i.setData(Uri.parse(url));
+//                                startActivity(i);
+//                                break;
                         }
                         return false;
                     }

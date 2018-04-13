@@ -13,10 +13,4 @@
         android:icon="@drawable/code"
         android:title="CODE"
         app:showAsAction="ifRoom" />
-    <item
-        android:id="@+id/tryit"
-        android:enabled="true"
-        android:icon="@drawable/compiler"
-        android:title="TRY IT "
-        app:showAsAction="ifRoom" />
 </menu>

@@ -6,15 +6,6 @@
     tools:context="com.shivam.deepikamamproject.fragments.LinkState"
     android:orientation="vertical">
 
-    <io.github.kbiakov.codeview.CodeView
-        android:padding="10dp"
-        android:id="@+id/codeviewlinkstate"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:visibility="gone">
-
-    </io.github.kbiakov.codeview.CodeView>
 
 
 
@@ -34,31 +25,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
     </ScrollView>
 
-    <EditText
-        android:inputType="numberSigned"
-        android:id="@+id/inputlinkstate"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:hint="ENTER INPUT"
-        android:gravity="center"
-        android:visibility="gone"
-        />
 
-
-
-    <TextView
-        android:padding="20dp"
-        android:hint="OUTPUT"
-        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-        android:id="@+id/outputlinkstate"
-        android:layout_margin="20dp"
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="gone"
-        />
 
     <android.support.design.widget.BottomNavigationView
         android:layout_gravity="bottom"
